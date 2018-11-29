@@ -112,7 +112,16 @@ public class MainActivity extends AppCompatActivity implements NewItemDialogFrag
     public void onItemSelected(MonumentItem item) {
         Intent showDetailsIntent = new Intent();
         showDetailsIntent.setClass(MainActivity.this, DetailsActivity.class);
-        //showDetailsIntent.putExtra(DetailsActivity.EXTRA_CITY_NAME, city);
+
+        Bundle extras = new Bundle();
+
+        extras.putString("EXTRA_NAME", item.name);
+        extras.putString("EXTRA_COUNTRY", item.country);
+        extras.putString("EXTRA_CITY", item.city);
+        //extras.putString(DetailsActivity.category, item.category.toString());
+        extras.putString("EXTRA_DESCRIPTION", item.description);
+        extras.putString("EXTRA_CATEGORY", item.category.name());
+        showDetailsIntent.putExtras(extras);
         startActivity(showDetailsIntent);
     }
 
@@ -130,10 +139,6 @@ public class MainActivity extends AppCompatActivity implements NewItemDialogFrag
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
 
         return super.onOptionsItemSelected(item);
     }

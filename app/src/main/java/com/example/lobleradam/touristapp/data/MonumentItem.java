@@ -7,6 +7,7 @@ import android.arch.persistence.room.TypeConverter;
 
 @Entity(tableName = "monumentitem")
 public class MonumentItem {
+
     public enum Category {
         STATUE,BUILDING,BRIDGE,LANDSCAPE;
 

@@ -1,6 +1,5 @@
 package com.example.lobleradam.touristapp.adapter;
 
-import android.app.Activity;
 import android.support.annotation.DrawableRes;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
@@ -11,7 +10,6 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.lobleradam.touristapp.DetailsActivity;
 import com.example.lobleradam.touristapp.R;
 import com.example.lobleradam.touristapp.data.MonumentItem;
 
@@ -127,24 +125,25 @@ public class MonumentAdapter extends RecyclerView.Adapter<MonumentAdapter.Monume
                     if(listener!=null){
                         listener.onItemSelected(item);
                     }
-                    //Intent showDetailsIntent = new Intent();
-                    Activity temp = new DetailsActivity();
-                    //showDetailsIntent.setClass(MainActivity.this, DetailsActivity.class);
-                   /// temp.start
                 }
             });
 
             removeButton.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
+
+
                     if (item != null){
                         listener.removeItem(item);
                         items.remove(item);
                         notifyDataSetChanged();
                     }
+
                 }
             });
 
         }
     }
 }
+
+
