@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="24dip">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dip"
+            >
+
+            // NAME
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:text="@string/name"/>
+            <TextView
+                android:textSize="20sp"
+                android:id="@+id/ItemNameText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Parlament"/>
+        </LinearLayout>
+
+    // CATEGORY
+
+        <ImageView
+            android:id="@+id/MonumentItemCategoryImageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="130dp"
+            android:padding="8dp"
+            tools:src="@drawable/ic_building" />
+
+</LinearLayout>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dip"
+            >
+    // COUNTRY
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:text="@string/Country"/>
+
+    <TextView
+        android:textSize="20sp"
+        android:id="@+id/ItemCountryText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hungary"/>
+    />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dip"
+            >
+
+    // CITY
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:text="@string/city"/>
+    <TextView
+        android:textSize="20sp"
+        android:id="@+id/ItemCityText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Budapest"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    // DESCRIPTION
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dip"
+        android:text="@string/description"/>
+
+    <TextView
+        android:textSize="16sp"
+        android:id="@+id/ItemDescriptionText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="This is a long dkjsfkdjnsfksdnfknsdfknsdknfskjdnfksdnkdsnfdsmnfs,mnf,m"/>
+    />
+
+
+    />
+
+
+
+
+</LinearLayout>
